@@ -3,7 +3,7 @@ import 'dart:html';
 import 'dart:async';
 import 'dart:math';
 
-part 'src/color_picker_lib.dart';
+part 'src/colorize_lib.dart';
 part 'src/widgets/hsv_gradient_picker.dart';
 part 'src/widgets/hue_slider.dart';
 part 'src/widgets/entry_control.dart';

@@ -9,4 +9,5 @@ dependencies:
   browser: any
   polymer: '>=0.9.0 <0.10.0'
 dev_dependencies:
+  logging: '>=0.9.0 <0.10.0'
   unittest: '>=0.9.0 <0.10.0'

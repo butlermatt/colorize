@@ -1,6 +1,6 @@
 part of colorize;
 
-class ColorPicker {
+class Colorize {
   /** The base element of the color picker */
   DivElement element;
 
@@ -35,7 +35,7 @@ class ColorPicker {
    * Creates a new Color picker control. Set [showInfoBox] to show
    * or hide the info box on the right.
    */
-  ColorPicker(int size, {this.initialColor, bool showInfoBox}) {
+  Colorize(int size, {this.initialColor, bool showInfoBox}) {
     picker = new HsvGradientPicker(size, size, initialColor);
     initialColor = new ColorValue.copy(picker.color);
 
@@ -78,7 +78,7 @@ class ColorPicker {
 }
 
 class ColorPickerInfoBox {
-  ColorPicker colorPicker;
+  Colorize colorPicker;
 
   ColorValue get color => colorPicker.picker.color;
   set color(ColorValue value) {
