@@ -5,6 +5,12 @@ import 'dart:html';
 // For debugging
 import 'src/debugging.dart' as debug;
 
+/**
+ * Calling this function will apply the colorize polyfill to all input elements
+ * with the class `colorize`. Throws an [UnsupportedError] if the input element 
+ * does not have the type of text such as if you assigned the colorize class
+ * to a input type of date.
+ */
 void colorizeMe() {
   debug.init();
   final log = new debug.Logger('colorizeMe Polyfill');
@@ -14,11 +20,20 @@ void colorizeMe() {
   log.fine('supports color: $supportsColor');
   
   // Color types are already supported natively no polyfill needed.
-  if(supportsColor) return;
+//  if(supportsColor) return;
   
-  var elements = document.querySelectorAll('input.colorize');
-  log.fine('Found ${elements.length} elements');
+  var elList = querySelectorAll('input.colorize');
+  log.fine('Found ${elList.length} elements');
+
+  if(elList.every((el) => el.type == 'text') != true) {
+    throw new UnsupportedError('"colorize" class assigned to non-text type' +
+        ' input element');
+  }
   
+  elList.forEach((el) { 
+    el.width = 44;
+    el.height = 23;
+  });
 }
 
 bool _checkSupport() {
