@@ -1,4 +1,4 @@
-part of color_picker;
+part of colorize;
 
 /**
  * Mouse event for the color pickers.   [x] and [y] are relative to the

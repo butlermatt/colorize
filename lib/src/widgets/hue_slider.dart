@@ -1,4 +1,4 @@
-part of color_picker;
+part of colorize;
 
 /**
  * Lets the user choose a hue color from the slider

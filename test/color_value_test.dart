@@ -1,6 +1,6 @@
 library color_value_test;
 
-import "package:color_picker/color_picker.dart";
+import "package:colorize/colorize.dart";
 import "package:unittest/unittest.dart";
 
 void main() {

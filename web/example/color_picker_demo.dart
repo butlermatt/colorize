@@ -1,5 +1,5 @@
 import 'dart:html';
-import 'package:color_picker/color_picker.dart';
+import 'package:colorize/colorize.dart';
 
 void main() {
   window.onLoad.listen((e) => _create());

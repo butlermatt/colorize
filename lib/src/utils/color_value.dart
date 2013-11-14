@@ -1,4 +1,4 @@
-part of color_picker;
+part of colorize;
 
 class ColorValue {
   /** Red color component. Value ranges from [0..255] */

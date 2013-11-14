@@ -1,4 +1,4 @@
-part of color_picker;
+part of colorize;
 
 class ColorPicker {
   /** The base element of the color picker */

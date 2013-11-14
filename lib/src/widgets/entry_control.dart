@@ -1,4 +1,4 @@
-part of color_picker;
+part of colorize;
 
 typedef String EntryControlGetter();
 typedef void EntryControlSetter(String value);

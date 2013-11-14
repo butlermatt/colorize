@@ -1,11 +1,12 @@
-name: color_picker
-version: 1.1.2
-description: >
-  The Color Picker control creates a Adobe Photoshop style HSV color picker 
-  where the RGB values can be picked based on the Hue, Saturation and Value 
-  parameters.  Multiple sizes are supported.
+name: colorize
+version: 0.0.1
+author: Matthew Butler <butler.matthew@gmail.com>
+description: The Colorize library provides a Dart-based input type="color" Polyfill and a custom element color picker. Based on the original dart-color-picker by code respawn
+homepage: https://github.com/butlermatt/colorize
+environment:
+  sdk: '>=0.8.10+6 <2.0.0'
 dependencies:
   browser: any
-  unittest: any
-author: Ali Akbar Vathi <ali.akbar@gmail.com>
-homepage: https://github.com/coderespawn/dart-color-picker
+  polymer: '>=0.9.0 <0.10.0'
+dev_dependencies:
+  unittest: '>=0.9.0 <0.10.0'

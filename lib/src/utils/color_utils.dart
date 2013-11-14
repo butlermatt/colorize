@@ -1,4 +1,4 @@
-part of color_picker;
+part of colorize;
 
 /**
  * Returns the color intensity (luma) for the specified [color]

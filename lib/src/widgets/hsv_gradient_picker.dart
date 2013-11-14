@@ -1,4 +1,4 @@
-part of color_picker;
+part of colorize;
 
 /**
  * Draws the color grandient of a cross section of the HSV cylinder
