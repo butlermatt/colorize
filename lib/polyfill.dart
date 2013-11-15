@@ -31,8 +31,8 @@ void colorizeMe() {
   }
   
   elList.forEach((el) { 
-    el.width = 44;
-    el.height = 23;
+    el.style.width = '44px';
+    el.style.height = '23px';
   });
 }
 

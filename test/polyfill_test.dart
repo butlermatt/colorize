@@ -21,7 +21,8 @@ void main() {
       var el = new InputElement()..classes.add('colorize');
       document.body.children.add(el);
       colorizeMe();
-      expect(el.width, equals(48));
+      expect(el.style.width, equals('44px'));
+      expect(el.style.height, equals('23px'));
       el.remove();
     });
     
