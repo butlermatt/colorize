@@ -22,6 +22,7 @@ class Colorize {
   /** Displays the information about the selected color */
   ColorPickerInfoBox infoBox;
 
+  // TODO: Gah! Change this to a stream instead of a callback!
   /** Notify any observers listening for color change events */
   ColorChangeListener _colorChangeListener;
   ColorChangeListener get colorChangeListener => _colorChangeListener;
