@@ -56,7 +56,7 @@ class ColorValue {
    */
   void _parseHex(String hex) {
     if (hex.length != 3 && hex.length != 6) {
-      throw new Exception("Invalid color hex format");
+      throw new ArgumentError("Invalid color hex format");
     }
 
     if (hex.length == 3) {
