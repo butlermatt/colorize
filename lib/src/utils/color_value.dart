@@ -95,9 +95,21 @@ class ColorValue {
 
   String toString() => "rgba($r, $g, $b, 1.0)";
   String toRgbString() => "$r, $g, $b";
-  String toHex() => '#${r.toRadixString(16)}'
-      '${g.toRadixString(16)}'
-      '${b.toRadixString(16)}';
+  String toHex() {
+    var str = new StringBuffer('#');
+    var tmpStr = r.toRadixString(16);
+    if(tmpStr.length < 2) str.write('0');
+    str.write(tmpStr);
+    
+    tmpStr = g.toRadixString(16);
+    if(tmpStr.length < 2) str.write('0');
+    str.write(tmpStr);
+    
+    tmpStr = b.toRadixString(16);
+    if(tmpStr.length < 2) str.write('0');
+    str.write(tmpStr);
+    return str.toString();
+  }
 }
 
 
