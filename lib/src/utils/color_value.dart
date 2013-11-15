@@ -95,6 +95,9 @@ class ColorValue {
 
   String toString() => "rgba($r, $g, $b, 1.0)";
   String toRgbString() => "$r, $g, $b";
+  String toHex() => '#${r.toRadixString(16)}'
+      '${g.toRadixString(16)}'
+      '${b.toRadixString(16)}';
 }
 
 
